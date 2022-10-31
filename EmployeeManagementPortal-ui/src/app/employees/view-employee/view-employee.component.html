@@ -1,0 +1,91 @@
+<div class="page-header ">
+  <div class="container">
+  <h1> View Student </h1>
+  </div>
+  </div>
+
+
+
+  <div class="container">
+  <div class="row top-row">
+  <div class="col-xs-12 row end-xs">
+ <a routerLink="/" color="primary" mat-raised-button>
+  <mat-icon> chevron_left </mat-icon>
+  Go Back
+  </a>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+  <!-- student details -->
+  <form #employeeDetailsForm="ngForm">
+    <div class="row">
+    <div class="col-xs-6">
+    <mat-form-field appearance="outline">
+    <mat-label>Employee Name </mat-label>
+    <input type="text" matInput [(ngModel)]="employeedetails.employeeName" name="employeeName">
+    </mat-form-field>
+    </div>
+
+
+    <div class="col-xs-6">
+    <mat-form-field appearance="outline">
+    <mat-label>Email </mat-label>
+    <input type="text" matInput [(ngModel)]="employeedetails.email" name="email">
+    </mat-form-field>
+   </div>
+    </div>
+
+    <div class="row">
+    <div class="col-xs-6">
+      <mat-form-field appearance="outline">
+      <mat-label>Employee Father Name </mat-label>
+      <input type="text" matInput [(ngModel)]="employeedetails.employeeFatherName" name="employeeFatherName">
+      </mat-form-field>
+     </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-6">
+          <mat-form-field appearance="outline">
+          <mat-label>Employee Role  </mat-label>
+          <input type="text" matInput [(ngModel)]="employeedetails.employeeRole" name="employeeRole">
+          </mat-form-field>
+         </div>
+          </div>
+
+          <div class="row">
+            <div class="col-xs-6">
+              <mat-form-field appearance="outline">
+              <mat-label>Employee Salary  </mat-label>
+              <input type="number" matInput [(ngModel)]="employeedetails.employeeSalary" name="employeeSalary">
+              </mat-form-field>
+             </div>
+              </div>
+
+              <div class="row">
+                <div class="col-xs-12">
+                  <div class ="row between-xs">
+
+                    <button mat-raised-button color="primary" (click)="onUpdate()" > Save</button>
+                    <button mat-raised-button color="warn" (click)="onDelete()" > Delete</button>
+                  </div>
+
+                </div>
+              </div>
+
+
+
+
+
+
+    </form>
+  </div>
+
+
+  <div class="row">
+  <div class="col-xs-6">
+  <!-- Profile -->
+  </div>
+
+</div>
+</div>
